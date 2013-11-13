@@ -320,6 +320,10 @@ class FraktGuide extends CarrierModule {
             			$products[$id] = $name;
             			$product_descriptions[$id] = $desc;
 			}
+			
+			$products['PA_DOREN_KAMPANJE2']             = 'På Døren Julekampanje';
+			$product_descriptions['PA_DOREN_KAMPANJE2'] = 'Sendingen er en På Døren- sending som leveres hjem til  mottaker mellom klokken 17 og 21. Mottaker varsles når sendingen er lastet på bil for utkjøring, via SMS og/eller e-post. Mottaker varsles også på  mobiltelefon 30 - 60 minutter før levering. Dersom sendingen ikke kan leveres,  blir den fraktet til lokalt postkontor/ post i butikk. Mottaker varsles om dette via  SMS, e-post eller hentemelding i postkassen. Sendingen kan spores ved hjelp av sporingsnummeret. Prisen er fastsatt til kr 89,- via postens julekampanje.';
+			
 			if($debug_mode) {
 				array_push($debug_info, "Products: ".print_r($products, true));
 				array_push($debug_info, "Product descriptions: ".print_r($product_descriptions, true));
